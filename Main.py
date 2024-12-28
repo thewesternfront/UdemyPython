@@ -4,6 +4,7 @@ import Tuples
 import Sets
 import Dictionaries
 import Loops
+import Functions
 
 
 def main():
@@ -71,6 +72,7 @@ if __name__ == '__main__':
     Sets.setTests()
     Dictionaries.dictionaryTests1()
     Loops.loopTests1()
+    Functions.greet('Troy')
 
 
 
