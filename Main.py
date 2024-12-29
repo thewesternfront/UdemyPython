@@ -5,21 +5,29 @@ import Sets
 import Dictionaries
 import Loops
 import Functions
+import Recursion
+import ArgsKwargs
 
 
 def main():
-    print('This is a test 123')
-    mystring = "Hello World 2"
+
+    # simple string
+    mystring = "Hello World!"
     print(mystring)
 
+    # simple list
     people_list = ["Mario", "Luigi"]
     for x in people_list:
         print(x)
 
+    # number in range type
     numbers = range(1, 100, 3)
     for x in numbers:
         print(x)
+        print("*** NUMBERS TYPE ***")
+        print(type(numbers))
 
+    # simple dictionary
     dict_users = {"User1": "Mario123", "User2": "Luigi2024"}
     print(dict_users)
     for x in dict_users:
@@ -73,7 +81,10 @@ if __name__ == '__main__':
     Dictionaries.dictionaryTests1()
     Loops.loopTests1()
     Functions.greet('Troy')
-
+    tem: float = Functions.greet_and_return(200, 300)
+    print(tem)
+    Recursion.recursion(5)
+    ArgsKwargs.ArgsKwargs('Troy', 'Anna', 'Sherri', 'Kevin', 'Pop', 'Mom')
 
 
 
