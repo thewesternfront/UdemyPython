@@ -11,5 +11,10 @@ def user_input():
         user_input()
     except ZeroDivisionError:
         print('Division by Zero not allowed')
+        user_input()
     except Exception as e:
         print('Something went wrong', e)
+    else:
+        print('You were successful')
+    finally:
+        print('This sill always run')
