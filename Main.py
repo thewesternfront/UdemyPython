@@ -7,6 +7,7 @@ import Loops
 import Functions
 import Recursion
 import ArgsKwargs
+import UserInput
 
 
 def main():
@@ -84,9 +85,9 @@ if __name__ == '__main__':
     tem: float = Functions.greet_and_return(200, 300)
     print(tem)
     Recursion.recursion(5)
-    ArgsKwargs.ArgsKwargs('Troy', 'Anna', 'Sherri', 'Kevin', 'Pop', 'Mom')
-
-
+    ArgsKwargs.ArgsKwargs(20, 'Troy', 'Anna', 'Sherri', 'Kevin', 'Pop', 'Mom')
+    ArgsKwargs.do_something('Troy', 'Kevin', name='Troy', age=57, phone='9257910416')
+    UserInput.user_input()
 
 
 
