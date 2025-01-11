@@ -1,3 +1,4 @@
+import ScratchPad
 import Strings
 import Lists
 import Tuples
@@ -8,6 +9,7 @@ import Functions
 import Recursion
 import ArgsKwargs
 import UserInput
+import OOP
 
 
 def main():
@@ -74,6 +76,8 @@ def main():
 
 if __name__ == '__main__':
     # main()
+    ScratchPad.ScratchPadTest()
+    """
     Strings.stringTest1()
     Strings.fStringsTest1()
     Lists.listTests1()
@@ -87,7 +91,24 @@ if __name__ == '__main__':
     Recursion.recursion(5)
     ArgsKwargs.ArgsKwargs(20, 'Troy', 'Anna', 'Sherri', 'Kevin', 'Pop', 'Mom')
     ArgsKwargs.do_something('Troy', 'Kevin', name='Troy', age=57, phone='9257910416')
-    UserInput.user_input()
+    """
+    # UserInput.user_input()
+    # UserInput.connect_to_internet(False)
+
+    mylamp: OOP.Lamp = OOP.Lamp("Hungarian", "Red")
+    mylamp.turn_on()
+    mylamp.turn_off()
+    mylamp.describe()
+
+    myfruits: OOP.Fruits = OOP.Fruits()
+    myfruits.set_color("Green")
+    myfruits.set_name("Kiwi")
+    print('Fruit name: %s, Fruit color: %s' % (myfruits.get_name(), myfruits.get_color()))
+    #fcolor = myfruits.get_color()
+    #fname = myfruits.get_name()
+    #print('Fruit Info: ', fname, fcolor)
+
+
 
 
 
