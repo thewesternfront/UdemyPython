@@ -29,3 +29,28 @@ class Fruits:
         self.color = color
     def get_color(self) -> str:
         return self.color
+
+    def describe(self):
+        print(f'Fruits: {self.name} {self.color}')
+
+
+class Fruit:
+    def __init__(self, name: str, color: str):
+        # This indicates private variables that can only be accessed
+        # through 'getters' and 'setters'
+        self._name = name
+        self._color = color
+
+        # getter
+        @property
+        def name(self):
+            print(f'Accessing the Fruit Class {self._name} is {self._color}')
+            return self._name
+
+        #setter
+        @name.setter
+        def name(self, value: str):
+            self._name = value
+            print(f'Fruit name is now set to {self._name}')
+
+

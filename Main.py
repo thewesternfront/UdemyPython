@@ -95,6 +95,7 @@ if __name__ == '__main__':
     # UserInput.user_input()
     # UserInput.connect_to_internet(False)
 
+    """
     mylamp: OOP.Lamp = OOP.Lamp("Hungarian", "Red")
     mylamp.turn_on()
     mylamp.turn_off()
@@ -103,10 +104,20 @@ if __name__ == '__main__':
     myfruits: OOP.Fruits = OOP.Fruits()
     myfruits.set_color("Green")
     myfruits.set_name("Kiwi")
-    print('Fruit name: %s, Fruit color: %s' % (myfruits.get_name(), myfruits.get_color()))
+    # print('Fruit name: %s, Fruit color: %s' % (myfruits.get_name(), myfruits.get_color()))
+    myfruits.describe()
+
     #fcolor = myfruits.get_color()
     #fname = myfruits.get_name()
     #print('Fruit Info: ', fname, fcolor)
+    """
+
+    apple: OOP.Fruit = OOP.Fruit('red_delicious_apple', 'red')
+    my_apple = apple._name
+    print(my_apple)
+    apple.name = 'Green Apple'
+    my_apple = apple.name
+    print(my_apple)
 
 
 
