@@ -40,6 +40,7 @@ class Fruit:
         # through 'getters' and 'setters'
         self._name = name
         self._color = color
+        print(f'Fruit Class Initializer {self._name}, of color {self._color}')
 
         # getter
         @property

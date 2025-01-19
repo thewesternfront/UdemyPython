@@ -10,10 +10,12 @@ import Recursion
 import ArgsKwargs
 import UserInput
 import OOP
+import Constructors_Initializers as CI
 
 
 def main():
 
+    """
     # simple string
     mystring = "Hello World!"
     print(mystring)
@@ -72,7 +74,7 @@ def main():
     print(a >= b & a <= b)
     print(not(a >= b and a <= b))
     print(not(a >= b or a <= b))
-
+    """
 
 if __name__ == '__main__':
     # main()
@@ -110,7 +112,7 @@ if __name__ == '__main__':
     #fcolor = myfruits.get_color()
     #fname = myfruits.get_name()
     #print('Fruit Info: ', fname, fcolor)
-    """
+    
 
     apple: OOP.Fruit = OOP.Fruit('red_delicious_apple', 'red')
     my_apple = apple._name
@@ -118,6 +120,16 @@ if __name__ == '__main__':
     apple.name = 'Green Apple'
     my_apple = apple.name
     print(my_apple)
+    """
+
+    # Comparing 2 classes for equality
+    vehicle: CI.Car = CI.Car('Mazda', '3', '2011')
+    vehicle.drive()
+    vehicle2: CI.Car = CI.Car('Mazda', '3', '2011')
+    vehicle2.drive()
+
+    print(vehicle == vehicle2)
+
 
 
 
