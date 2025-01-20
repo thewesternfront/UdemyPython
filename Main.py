@@ -11,6 +11,7 @@ import ArgsKwargs
 import UserInput
 import OOP
 import Constructors_Initializers as CI
+import Inheritance
 
 
 def main():
@@ -78,7 +79,7 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    ScratchPad.ScratchPadTest()
+    # ScratchPad.ScratchPadTest()
     """
     Strings.stringTest1()
     Strings.fStringsTest1()
@@ -122,6 +123,7 @@ if __name__ == '__main__':
     print(my_apple)
     """
 
+    """
     # Comparing 2 classes for equality
     vehicle: CI.Car = CI.Car('Mazda', '3', '2011')
     vehicle.drive()
@@ -129,6 +131,20 @@ if __name__ == '__main__':
     vehicle2.drive()
 
     print(vehicle == vehicle2)
+
+    bc: Inheritance.BaseClass = Inheritance.BaseClass()
+    print(bc.describe())
+
+    dc: Inheritance.DerivedClass = Inheritance.DerivedClass()
+    print(dc.describe())
+    """
+
+    cat: Inheritance.Cat = Inheritance.Cat('Apple', 100)
+    cat.eat()
+    cat.sleep()
+    cat.meow()
+
+
 
 
 
