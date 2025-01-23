@@ -1,4 +1,6 @@
 from pydoc import describe
+from typing import override
+
 
 # Base Class
 class Animal:
@@ -9,7 +11,11 @@ class Animal:
         print(f'{self.name} is eating')
 
     def sleep(self):
-        print(f'{self.name} is sleeping')
+        print(f'{self.name} is sleeping in base')
+
+    @staticmethod
+    def greeting():
+        print('Hello, from a static method')
 
 
 # Sub Class
@@ -29,3 +35,8 @@ class Dog(Animal):
 
     def dogjob(self):
         print(f'{self.name} performs the job: "{self.job}"')
+
+    @override
+    def sleep(self):
+        print(f'{self.name} is sleeping in derived class')
+        super().sleep()

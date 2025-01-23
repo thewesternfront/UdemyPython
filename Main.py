@@ -12,6 +12,7 @@ import UserInput
 import OOP
 import Constructors_Initializers as CI
 import Inheritance
+from Inheritance import Animal
 
 
 def main():
@@ -149,6 +150,10 @@ if __name__ == '__main__':
     dog.eat()
     dog.sleep()
     dog.dogjob()
+
+    Animal.greeting()
+    cat.greeting()
+    dog.greeting()
 
 
 
