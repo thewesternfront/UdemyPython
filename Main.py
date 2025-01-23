@@ -139,10 +139,17 @@ if __name__ == '__main__':
     print(dc.describe())
     """
 
-    cat: Inheritance.Cat = Inheritance.Cat('Apple', 100)
+# Simple inheritance
+    cat: Inheritance.Cat = Inheritance.Cat('Snuffles', 100)
     cat.eat()
     cat.sleep()
     cat.meow()
+
+    dog: Inheritance.Dog = Inheritance.Dog('Remy', 'guardian')
+    dog.eat()
+    dog.sleep()
+    dog.dogjob()
+
 
 
 

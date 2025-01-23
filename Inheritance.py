@@ -21,3 +21,11 @@ class Cat(Animal):
 
     def meow(self):
         print(f'{self.name} says "meow"')
+
+class Dog(Animal):
+    def __init__(self, name: str, job: str):
+        super().__init__(name)
+        self.job = job
+
+    def dogjob(self):
+        print(f'{self.name} performs the job: "{self.job}"')
