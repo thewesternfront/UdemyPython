@@ -1,4 +1,3 @@
-from typing import override
 
 
 class Car:
