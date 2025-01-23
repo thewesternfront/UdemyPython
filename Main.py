@@ -139,7 +139,7 @@ if __name__ == '__main__':
     print(dc.describe())
     """
 
-# Simple inheritance
+    # Simple inheritance
     cat: Inheritance.Cat = Inheritance.Cat('Snuffles', 100)
     cat.eat()
     cat.sleep()
