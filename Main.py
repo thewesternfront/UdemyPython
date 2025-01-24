@@ -12,7 +12,9 @@ import UserInput
 import OOP
 import Constructors_Initializers as CI
 import Inheritance
+from AbstractMethods import Phone, TroyPhone
 from Inheritance import Animal
+import AbstractMethods
 
 
 def main():
@@ -141,6 +143,7 @@ if __name__ == '__main__':
     """
 
     # Simple inheritance
+    """
     cat: Inheritance.Cat = Inheritance.Cat('Snuffles', 100)
     cat.eat()
     cat.sleep()
@@ -154,6 +157,20 @@ if __name__ == '__main__':
     Animal.greeting()
     cat.greeting()
     dog.greeting()
+    
+    # calling a class method without an instance
+    print(f'Animal Version is {Animal.printversion()}')
+    """
+
+
+    ### Working with Abstract Methods ###
+    troysphone: AbstractMethods = TroyPhone('Phone 14 Pro Max')
+    troysphone.call_target('Troy West')
+    troysphone.phone_power(98)
+
+    troysphone.description()
+
+
 
 
 

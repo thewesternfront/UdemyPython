@@ -4,6 +4,9 @@ from typing import override
 
 # Base Class
 class Animal:
+    # class level variable
+    version: str
+
     def __init__(self, name: str):
         self.name = name
 
@@ -16,6 +19,12 @@ class Animal:
     @staticmethod
     def greeting():
         print('Hello, from a static method')
+
+    @classmethod
+    def printversion(cls):
+        cls.version = '2.1.3a'
+        print(f'Version: {cls.version}')
+        return cls.version
 
 
 # Sub Class
