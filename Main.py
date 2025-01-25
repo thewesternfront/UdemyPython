@@ -15,6 +15,7 @@ import Inheritance
 from AbstractMethods import Phone, TroyPhone
 from Inheritance import Animal
 import AbstractMethods
+import PropertyTest
 
 
 def main():
@@ -167,8 +168,20 @@ if __name__ == '__main__':
     troysphone: AbstractMethods = TroyPhone('Phone 14 Pro Max')
     troysphone.call_target('Troy West')
     troysphone.phone_power(98)
-
     troysphone.description()
+
+    person: PropertyTest.Person = PropertyTest.Person('Troy', 'West')
+    print(person.first)
+    print(person.last)
+    print(person.fullname)
+    print(person.email())
+
+    person.last = 'Johansson'
+    print(person.first)
+    print(person.last)
+    print(person.fullname)
+    print(person.email())
+
 
 
 
